@@ -1,0 +1,7 @@
+<nz-switch (click)="changeToggle()"></nz-switch> 
+<div>
+    <p *ngIf="checked; else loadingTmpl">
+        hello
+    </p>
+</div>
+<ng-template #loadingTmpl>    Loading...</ng-template>
